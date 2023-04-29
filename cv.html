@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> My CV | Esraa Adel </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor=#34495E>
+<center><img src="photo.jpg" width="150px" height="200px"></center>
+<center><h1> My CV presented to Prof. Sarah El-Metwally </h1></center>
+<hr>
+<div class="row">
+  <div class="column">
+<h3> Personal Information </h3>
+<h5><b>Name:</b>Esraa Adel Ahmed Mady </h5>
+<h5><b>Address:</b>Tanta ,Difra </h5>
+<h5>Phone Number:01026990776</h5>
+<h5>Data of Birth:12/10/2001 </h5>
+<h5>E-mail:soosomady@gmail.com </h5>
+<h5>Age:21,5 </h5>
+<hr>
+<h3>Work Experiances </h3>
+<h5>Training in the National Bank </h5>
+<h5>I worked at Microsoft Corporation</h5>
+<h5>I trained at Egyption Post  </h5>
+<center><button class="button" onclick="time();"> Time </button></center><br>
+<center><h5 id="time"></h5></center>
+</div>
+<div class="column">
+<h3>Languages</h3>
+<h5>(Arabic)</h5>
+<h5>(English)</h5>
+<h5>(Turkish)</h5>
+<hr>
+<h3>Skills</h3>
+<h5>Computer Skills</h5>
+<h5>MS Office apps</h5>
+<hr>
+<h3> Soft Skills</h3>
+<h5> Organization  </h5>
+<h5> Flexibility</h5>
+<h5> Problem Solving </h5
+<h5> Team Work</h5>
+<h5> Project Managment</h5>
+<hr>
+<h3>Education</h3>
+<p>I graduted from faculty of commerce department BIS Tanta University</p>
+<p>I have a master`s degree in marketing
+<hr>
+<h3>References</h3>
+<h5>Available upon request</h5>
+</div>
+</div>
+<script>
+  function time(){
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) 
+         {
+            greeting = "Good morning Everybody";
+         } 
+        else if (time < 20)
+         {
+            greeting = "Good day Everybody";
+         } 
+        else {
+          greeting = "Good evening Everybody";
+             }
+          document.getElementById("time").innerHTML = greeting;
+
+}
+</script>
+</body>
+</html>
